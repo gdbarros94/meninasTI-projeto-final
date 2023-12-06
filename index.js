@@ -127,39 +127,30 @@ recebeArray(lista); */
 const header = document.createElement("header");
 const content = document.createElement("main");
 const footer = document.createElement("footer");
-
-// Adiciona conteúdo ao cabeçalho
+const div = document.createElement("div");
 header.innerHTML = `
   <h1>Cabeçalho</h1>
   <p>Este é o cabeçalho da página.</p>
 `;
-// Adiciona conteúdo ao conteúdo
 content.innerHTML = `
   <h2>Conteúdo</h2>
   <p>Este é o conteúdo da página.</p>
 `;
 
-// Adiciona conteúdo ao rodapé
 footer.innerHTML = `
   <p>Rodapé</p>
 `;
-
-// Adiciona os elementos à página
 document.body.appendChild(header);
 document.body.appendChild(content);
 document.body.appendChild(footer);
+document.body.appendChild(div);
 
 /*****************************/
 
-// Aplica estilos ao cabeçalho
 header.style.backgroundColor = "#ccc";
 header.style.padding = "10px";
-
-// Aplica estilos ao conteúdo
 content.style.backgroundColor = "#fff";
 content.style.padding = "20px";
-
-// Aplica estilos ao rodapé
 footer.style.backgroundColor = "#ccc";
 footer.style.padding = "10px";
 
@@ -167,6 +158,7 @@ footer.style.padding = "10px";
 
 
 const container = document.querySelector("main");
+
 const linhas = [];
 const cores = ["#fff", "#ccc"];
 
@@ -190,3 +182,5 @@ function alternarCores() {
 alternarCores();
 // Define um evento para alternar as cores
 //container.addEventListener("click", alternarCores);
+
+
